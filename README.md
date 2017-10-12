@@ -9,7 +9,7 @@ include wp-html-helper.php file in your theme or plugin.
 	img_tag(
 		array(
 			'url' 	 => 'img.png',   //  image url
-			'alt' 	 => 'Img alt',   //   image alter tag 
+			'alt' 	 => 'Img alt',   //   image alter tag ( by default image name set as alt )
 			'class'  => 'img-class', //   class name
 		)
 	);
