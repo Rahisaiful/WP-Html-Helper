@@ -27,7 +27,7 @@ include wp-html-helper.php file in your theme or plugin.
 
 ### The following functions are available:
 
-## Create HTML img tags
+## Create HTML img tag
 ```php
 img_tag(
 	array(
@@ -42,7 +42,7 @@ img_tag(
 );
 
 ```
-## Create HTML anchor tags
+## Create HTML anchor tag
 ```php
 anchor_tag(
 	array(
@@ -55,7 +55,7 @@ anchor_tag(
 );
 
 ```
-## Create HTML heading tags
+## Create HTML heading tag
 ```php
 heading_tag(
 	array(
@@ -67,7 +67,7 @@ heading_tag(
 );
 
 ```
-## Create HTML paragraph tags
+## Create HTML paragraph tag
 ```php
 paragraph_tag(
 	array(
