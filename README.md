@@ -8,16 +8,19 @@ include wp-html-helper.php file in your theme or plugin.
 <div class="image">
 	img_tag(
 		array(
-			'url' 	 => '',  // 
-			'alt' 	 => '',
-			'class'  => '',
-			'id' 	 => '',
-			'width'  => '',
-			'height' => '',
-			'srcset' => ''
+			'url' 	 => 'img.png',   //  image url
+			'alt' 	 => 'Img alt',   //   image alter tag 
+			'class'  => 'img-class', //   class name
 		)
 	);
 </div>
+
+### Output :
+
+<div class="image">
+	<img src="img.png" alt="Img alt" class="img-class" />
+</div>
+
 ```
 
 # Available Functions:
