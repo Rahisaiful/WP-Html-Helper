@@ -4,6 +4,7 @@ The WP HTML Helper contains functions that assist in working with HTML
 # Example use
 include wp-html-helper.php file in your theme or plugin.
 
+```php
 <div class="image">
 	img_tag(
 		array(
@@ -17,7 +18,7 @@ include wp-html-helper.php file in your theme or plugin.
 		)
 	);
 </div>
-
+```
 
 # Available Functions:
 
