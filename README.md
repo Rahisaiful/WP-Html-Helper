@@ -1,7 +1,23 @@
 # WP Html Helper
 The WP HTML Helper contains functions that assist in working with HTML
 
-# Installation
+# Example use
+include wp-html-helper.php file in your theme or plugin.
+
+<div class="image">
+	img_tag(
+		array(
+			'url' 	 => '',  // 
+			'alt' 	 => '',
+			'class'  => '',
+			'id' 	 => '',
+			'width'  => '',
+			'height' => '',
+			'srcset' => ''
+		)
+	);
+</div>
+
 
 # Available Functions:
 
@@ -39,7 +55,7 @@ anchor_tag(
 ```php
 heading_tag(
 	array(
-		'tag' 	 => 'h1',
+		'tag' 	 => '',
 		'text' 	 => '',
 		'class'  => '',
 		'id' 	 => '',
