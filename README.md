@@ -1,6 +1,8 @@
 # WP Html Helper
 The WP HTML Helper contains functions that assist in working with HTML
 
+# Installation
+
 # Available Functions:
 
 ### The following functions are available:
@@ -38,7 +40,7 @@ anchor_tag(
 heading_tag(
 	array(
 		'tag' 	 => 'h1',
-		'text' 	 => 'Write Something',
+		'text' 	 => '',
 		'class'  => '',
 		'id' 	 => '',
 	)
@@ -49,7 +51,7 @@ heading_tag(
 ```php
 paragraph_tag(
 	array(
-		'text' 	 => 'Write Something',
+		'text' 	 => '',
 		'class'  => '',
 		'id' 	 => '',
 	)

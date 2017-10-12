@@ -30,7 +30,7 @@ if( !function_exists( 'img_default_alt' ) ){
 
 // Image html callback
 if( !function_exists( 'img_tag' ) ){
-	function img_tag( $args = array() ){
+	function img_tag( array $args ){
 		
 		
 		$default = array(
@@ -89,7 +89,7 @@ if( !function_exists( 'img_tag' ) ){
 
 // Anchor Tag
 if( !function_exists( 'anchor_tag' ) ){
-	function anchor_tag( $args = array() ){
+	function anchor_tag( array $args ){
 		
 		$default = array(
 		
@@ -136,7 +136,7 @@ if( !function_exists( 'anchor_tag' ) ){
 
 // Heading Tag
 if( !function_exists( 'heading_tag' ) ){
-	function heading_tag( $args = array() ){
+	function heading_tag( array $args ){
 		
 		$default = array(
 		
@@ -174,7 +174,7 @@ if( !function_exists( 'heading_tag' ) ){
 }
 // Paragraph Tag
 if( !function_exists( 'paragraph_tag' ) ){
-	function paragraph_tag( $args = array() ){
+	function paragraph_tag( array $args ){
 		
 		$default = array(
 		
