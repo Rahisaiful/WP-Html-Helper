@@ -172,6 +172,7 @@ if( !function_exists( 'heading_tag' ) ){
 		
 	}
 }
+
 // Paragraph Tag
 if( !function_exists( 'paragraph_tag' ) ){
 	function paragraph_tag( array $args ){
