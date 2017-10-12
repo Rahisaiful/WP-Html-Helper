@@ -20,7 +20,7 @@ img_tag(
 );
 
 ```
-## Create HTML Anchor tags
+## Create HTML anchor tags
 ```php
 anchor_tag(
 	array(
