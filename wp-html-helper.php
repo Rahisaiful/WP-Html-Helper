@@ -1,6 +1,6 @@
 <?php 
 
-// image alt
+// image default alt
 if( !function_exists( 'img_default_alt' ) ){
 	function img_default_alt( $url = '' ){
 
