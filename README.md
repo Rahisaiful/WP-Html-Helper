@@ -78,3 +78,27 @@ paragraph_tag(
 );
 
 ```
+## Create HTML other tag
+```php
+other_tag(
+	array(
+		'tag' 	 => '',
+		'text' 	 => '',
+		'class'  => '',
+		'id' 	 => '',
+	)
+);
+
+```
+## Create HTML button element 
+```php
+button_element(
+	array(
+		'text' 	 => '',
+		'type'   => '',
+		'class'  => '',
+		'id' 	 => '',
+	)
+);
+
+```
