@@ -28,7 +28,7 @@ if( !function_exists( 'img_default_alt' ) ){
 }
 
 
-// Image html callback
+// Image Tag
 if( !function_exists( 'img_tag' ) ){
 	function img_tag( array $args ){
 		
