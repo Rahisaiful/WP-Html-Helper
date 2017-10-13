@@ -34,7 +34,6 @@ if( !function_exists( 'img_tag' ) ){
 		
 		
 		$default = array(
-		
 			'url' 	 => '',
 			'alt' 	 => '',
 			'class'  => '',
@@ -92,7 +91,6 @@ if( !function_exists( 'anchor_tag' ) ){
 	function anchor_tag( array $args ){
 		
 		$default = array(
-		
 			'url' 	 => '',
 			'text' 	 => 'Click Here',
 			'target' => '',
@@ -139,7 +137,6 @@ if( !function_exists( 'heading_tag' ) ){
 	function heading_tag( array $args ){
 		
 		$default = array(
-		
 			'tag' 	 => 'h1',
 			'text' 	 => 'Write Something',
 			'class'  => '',
@@ -178,7 +175,6 @@ if( !function_exists( 'paragraph_tag' ) ){
 	function paragraph_tag( array $args ){
 		
 		$default = array(
-		
 			'text' 	 => 'Write Something',
 			'class'  => '',
 			'id' 	 => '',
@@ -204,6 +200,81 @@ if( !function_exists( 'paragraph_tag' ) ){
 
 		echo '<p'.wp_kses_post( $attr ).'>'.wp_kses_post( $args['text'] ).'</p>';
 		
+		
+	}
+}
+
+// Other Tag
+if( !function_exists( 'other_tag' ) ){
+	function other_tag( array $args ){
+		
+		$default = array(
+			'tag' 	 => 'span',
+			'text' 	 => 'Write Something',
+			'class'  => '',
+			'id' 	 => '',
+		);
+		
+		$args = wp_parse_args( $args,  $default );
+		
+		// Tag 
+		$tag = $args['tag'];
+
+		/**
+		 * Optional Attr
+		 */
+		
+		$attr = '';
+		// class 
+		if( !empty( $args['class'] ) ){
+			$attr .= ' class="'.esc_attr( $args['class'] ).'"';
+		}
+		// id 
+		if( !empty( $args['id'] ) ){
+			$attr .= ' id="'.esc_attr( $args['id'] ).'"';
+		}
+
+
+		
+		echo '<'.wp_kses_post( $tag.$attr ).'>'.esc_html( $args['text'] ).'</'.esc_attr( $tag ).'>';
+		
+		
+	}
+}
+
+// Button Element 
+if( !function_exists( 'button_element ' ) ){
+	function button_element( array $args ){
+		
+		$default = array(
+			'text' 	 => 'Button',
+			'type'   => '',
+			'class'  => '',
+			'id' 	 => '',
+		);
+		
+		$args = wp_parse_args( $args,  $default );
+		
+		/**
+		 * Optional Attr
+		 */
+		
+		$attr = '';
+		// class 
+		if( !empty( $args['class'] ) ){
+			$attr .= ' class="'.esc_attr( $args['class'] ).'"';
+		}
+		// id 
+		if( !empty( $args['id'] ) ){
+			$attr .= ' id="'.esc_attr( $args['id'] ).'"';
+		}
+		// type 
+		if( !empty( $args['type'] ) ){
+			$attr .= ' type="'.esc_attr( $args['type'] ).'"';
+		}
+
+
+		echo '<button '.wp_kses_post( $attr ).'>'.esc_html( $args['text'] ).'</button>';
 		
 	}
 }
