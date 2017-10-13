@@ -1,4 +1,9 @@
 <?php 
+/**
+ * WP HTML Helper 
+ * 1.0 
+ *
+ */
 
 // image default alt
 if( !function_exists( 'img_default_alt' ) ){
